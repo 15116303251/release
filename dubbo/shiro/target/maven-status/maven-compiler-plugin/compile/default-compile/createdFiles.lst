@@ -1,0 +1,8 @@
+com\example\shiro\config\ShiroConfig.class
+com\example\shiro\controller\LoginController.class
+com\example\shiro\ShiroApplication.class
+com\example\shiro\config\MyShiroRealm.class
+com\example\shiro\entities\SysRole.class
+com\example\shiro\service\UserInfoService.class
+com\example\shiro\entities\SysPermission.class
+com\example\shiro\entities\UserInfo.class

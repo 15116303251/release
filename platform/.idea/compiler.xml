@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="animal" />
+        <module name="controller" />
+        <module name="dubbo-provider" />
+        <module name="platform" />
+        <module name="redis" />
+        <module name="schedule" />
+        <module name="shiro" />
+        <module name="user" />
+        <module name="weixin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="animal" target="1.8" />
+      <module name="background" target="1.8" />
+      <module name="controller" target="1.8" />
+      <module name="dubbo" target="1.8" />
+      <module name="dubbo-provider" target="1.8" />
+      <module name="platform" target="1.6" />
+      <module name="redis" target="1.8" />
+      <module name="schedule" target="1.8" />
+      <module name="shiro" target="1.8" />
+      <module name="user" target="1.8" />
+      <module name="weixin" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="animal" options="" />
+      <module name="background" options="" />
+      <module name="controller" options="" />
+      <module name="dubbo" options="" />
+      <module name="dubbo-provider" options="" />
+      <module name="platform" options="-nowarn" />
+      <module name="redis" options="" />
+      <module name="schedule" options="" />
+      <module name="shiro" options="" />
+      <module name="user" options="" />
+      <module name="weixin" options="" />
+    </option>
+  </component>
+</project>

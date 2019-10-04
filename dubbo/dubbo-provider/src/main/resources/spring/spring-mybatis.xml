@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<!--&lt;!&ndash; 基于Druid数据库链接池的数据源配置 &ndash;&gt;-->
+	<!--<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">-->
+		<!--&lt;!&ndash; 基本属性driverClassName、 url、user、password &ndash;&gt;-->
+		<!--<property name="driverClassName" value="com.mysql.jdbc.Driver" />-->
+		<!--<property name="url" value="${spring.datasource.url}" />-->
+		<!--<property name="username" value="${spring.datasource.username}" />-->
+		<!--<property name="password" value="${spring.datasource.password}" />-->
+		<!--&lt;!&ndash; 配置初始化大小、最小、最大 &ndash;&gt;-->
+		<!--&lt;!&ndash; 通常来说，只需要修改initialSize、minIdle、maxActive &ndash;&gt;-->
+		<!--<property name="initialSize" value="2" />-->
+		<!--<property name="minIdle" value="2" />-->
+		<!--<property name="maxActive" value="30" />-->
+		<!--<property name="testWhileIdle" value="false" />-->
+
+		<!--&lt;!&ndash; 配置获取连接等待超时的时间 &ndash;&gt;-->
+		<!--<property name="maxWait" value="5000" />-->
+		<!--&lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;-->
+		<!--<property name="minEvictableIdleTimeMillis" value="30000" />-->
+		<!--&lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;-->
+		<!--<property name="timeBetweenEvictionRunsMillis" value="60000" />-->
+		<!--&lt;!&ndash; 解密密码必须要配置的项config(原来的值) &ndash;&gt;-->
+		<!--<property name="filters" value="stat,wall" />-->
+
+		<!--<property name="proxyFilters">-->
+			<!--<list>-->
+				<!--<ref bean="log-filter"/>-->
+			<!--</list>-->
+		<!--</property>-->
+
+		<!--<property name="connectionProperties" value="com.king.dubbo.config.decrypt=false" />-->
+	<!--</bean>-->
+
+	<!--&lt;!&ndash;配置的用于输出sql的过滤器&ndash;&gt;-->
+	<!--<bean id="log-filter" class="com.alibaba.druid.filter.logging.Log4j2Filter">-->
+		<!--<property name="connectionLogEnabled" value="false"/>-->
+		<!--<property name="statementLogEnabled" value="true"/>-->
+		<!--<property name="resultSetLogEnabled" value="false"/>-->
+		<!--<property name="statementExecutableSqlLogEnable" value="false"/>-->
+	<!--</bean>-->
+
+	<!--&lt;!&ndash; 将数据源映射到sqlSessionFactory中 &ndash;&gt;-->
+	<!--<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">-->
+		<!--<property name="configLocation" value="classpath:mybatis/mybatis-config.xml" />-->
+		<!--<property name="dataSource" ref="dataSource" />-->
+	<!--</bean>-->
+
+	<!--&lt;!&ndash; SqlSession模板类实例 &ndash;&gt;-->
+	<!--<bean id="sessionTemplate" class="org.mybatis.spring.SqlSessionTemplate" destroy-method="close">-->
+		<!--<constructor-arg index="0" ref="sqlSessionFactory" />-->
+	<!--</bean>-->
+
+	<!--&lt;!&ndash;======= 事务配置 Begin ================= &ndash;&gt;-->
+	<!--<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+		<!--<property name="dataSource" ref="dataSource"></property>-->
+	<!--</bean>-->
+
+</beans>

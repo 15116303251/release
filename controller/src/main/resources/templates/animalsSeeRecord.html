@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>宠物基本信息</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="row-fluid">
+                <div class="span12">
+                    <ul class="nav nav-tabs" style="font-family: '楷体';padding: 50px;font-size: 50px;">
+                        <li class="active" >
+                            <a href="主家">主家</a>
+                        </li>
+                        <li >
+                            <a th:href='@{/toAnimals(id=${animalId})}'>宠物</a>
+
+
+                        </li>
+                        <li class="disabled">
+                            <a th:href='@{/toAnimalsHabit(id=${animalId})}'>习惯</a>
+                        </li>
+                        <li class="disabled">
+                            <a  th:href='@{/toAnimalsSeeRecord(id=${animalId})}'>救诊信息</a>
+                        </li>
+                    </ul>
+
+                    <ol  style="padding: 0 ;list-style-type:none">
+                        <li style="margin-top: 20px" th:each="animalSeeRecordDto : ${animalSeeRecordDtoList}">
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <div class="row-fluid">
+                                        <div style="margin: 0 auto;overflow: hidden;text-overflow:ellipsis;">
+                                            <em style="font-family:'楷体';font-size:50px;font-style:inherit;padding-left: 10px;" th:text="${'原因:'+animalSeeRecordDto.cause}" >分布式的版本控制系统</em>
+                                            <em style="font-family:'楷体';font-size:50px;font-style:inherit;padding-left: 10px" th:text="${'诊治结果:'+animalSeeRecordDto.seeStatus}" >分布式的版本控制系统</em>
+                                        </div>
+                                        <div style="margin: 0 auto;height: 50px;">
+                                            <span style="font-family:'楷体';font-size:40px;float: right;padding-top: 10px;"><em style="font-style:inherit;" th:text="'诊治时间：'+${animalSeeRecordDto.createTime}" >分布式的版本控制系统</em></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

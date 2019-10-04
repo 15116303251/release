@@ -1,0 +1,16 @@
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\service\AnimalHabitServiceImpl.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\dao\model\Animal.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\dao\model\AnimalHabitExample.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\dao\model\AdoptConditionExample.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\dao\model\AnimalExample.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\dao\model\AdoptCondition.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\dao\AnimalMapper.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\dao\model\AnimalSeeRecordExample.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\service\AnimalServiceImpl.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\service\AnimalSeeRecordServiceImpl.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\dao\model\AnimalHabit.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\dao\AnimalHabitMapper.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\dao\AnimalSeeRecordMapper.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\service\AdoptConditionServiceImpl.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\dao\model\AnimalSeeRecord.java
+F:\workspace\release\dubbo\animal\src\main\java\com\king\dubbo\animal\dao\AdoptConditionMapper.java

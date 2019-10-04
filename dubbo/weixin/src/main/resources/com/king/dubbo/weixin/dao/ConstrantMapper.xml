@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.king.dubbo.weixin.dao.ConstrantMapper" >
+  <select id="selectAllConstrant" resultType="com.king.dubbo.entities.model.Constrant">
+      select * from weixin.constrant
+  </select>
+</mapper>

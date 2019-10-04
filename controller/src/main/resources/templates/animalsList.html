@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>宠物列表</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="carousel slide" id="carousel-233603">
+                        <div class="carousel-inner">
+                            <div class="item active" style="margin: 20px">
+                                <img alt="" src="../images/timg1.jpg" style="margin-left: 20px"/>
+                                <div class="carousel-caption">
+                                    <h4>自行车</h4>
+                                    <p>以自行车为工具比赛骑行速度的体育运动。1896年第一届奥林匹克运动会上被列为正式比赛项目。环法赛为最著名的世界自行车锦标赛。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<a data-slide="prev" href="#carousel-233603" class="left carousel-control">‹</a> -->
+                        <!--<a data-slide="next" href="#carousel-233603" class="right carousel-control">›</a>-->
+                    </div>
+                    <ul class="nav nav-tabs" style="margin-top: 20px">
+                        <li class="active" style="font-size: 40px;padding-left: 15px">
+                            <a href="#">首页</a>
+                        </li>
+                        <li style="font-size: 40px">
+                            <a href="#">资料</a>
+                        </li>
+                        <li class="disabled" style="font-size: 40px">
+                            <a href="#">信息</a>
+                        </li>
+                        <li class="disabled" style="font-size: 40px">
+                            <a href="#">首页</a>
+                        </li>
+                        <li class="disabled" style="font-size: 40px">
+                            <a href="#">资料</a>
+                        </li>
+                    </ul>
+
+                    <ol  style="padding: 0 ;list-style-type:none">
+                        <li style="margin-top: 20px" th:each="animal : ${animalDtosList}">
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <div class="row-fluid">
+                                        <div style="margin: 0 auto; text-align: center">
+                                            <img th:src="${animal.image}" style="width: 100%;height: 500px;"/>
+                                        </div>
+                                        <div style="margin: 0 auto;overflow: hidden;text-overflow:ellipsis;">
+                                            <em style="font-family:'楷体';font-size:50px;font-style:inherit;padding-left: 10px;" th:text="${'昵称:'+animal.name}" >分布式的版本控制系统</em>
+                                            <em style="font-family:'楷体';font-size:50px;font-style:inherit;padding-left: 10px" th:text="${'品种:'+animal.catetory}" >分布式的版本控制系统</em>
+                                            <em style="font-family:'楷体';font-size:50px;font-style:inherit;padding-left: 10px;height: 20px;" th:text="${'现居地:'+animal.address}" >分布式的版本控制系统</em>
+                                        </div>
+                                        <div style="margin: 0 auto">
+                                            <span style="font-family:'楷体';font-size:40px;float: right;padding-top: 10px;"><em style="font-style:inherit;" th:text="'发布于'+${animal.createTime}" >分布式的版本控制系统</em></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

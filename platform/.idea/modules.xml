@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../dubbo/animal/animal.iml" filepath="$PROJECT_DIR$/../dubbo/animal/animal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../controller/controller.iml" filepath="$PROJECT_DIR$/../controller/controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dubbo/dubbo.iml" filepath="$PROJECT_DIR$/../dubbo/dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dubbo/dubbo-provider/dubbo-provider.iml" filepath="$PROJECT_DIR$/../dubbo/dubbo-provider/dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform.iml" filepath="$PROJECT_DIR$/platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dubbo/redis/redis.iml" filepath="$PROJECT_DIR$/../dubbo/redis/redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dubbo/shiro/shiro.iml" filepath="$PROJECT_DIR$/../dubbo/shiro/shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dubbo/user/user.iml" filepath="$PROJECT_DIR$/../dubbo/user/user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dubbo/weixin/weixin.iml" filepath="$PROJECT_DIR$/../dubbo/weixin/weixin.iml" />
+    </modules>
+  </component>
+</project>

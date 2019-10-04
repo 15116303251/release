@@ -1,0 +1,11 @@
+com\king\dubbo\redis\config\RedisConfiguration.class
+com\king\dubbo\redis\config\RedisHelper.class
+com\king\dubbo\annoation\RedisCacheEvict.class
+com\king\dubbo\annoation\RedisCache.class
+com\king\dubbo\aspect\BaseAspect.class
+com\king\dubbo\redis\config\RedisConverter.class
+com\king\dubbo\aspect\RedisCacheAspect.class
+com\king\dubbo\aspect\RedisCacheEvictAspect.class
+com\king\dubbo\redis\config\RedisConfiguration$1.class
+com\king\dubbo\redis\config\ScopeConstant.class
+com\king\dubbo\redis\config\RedisHelperImpl.class

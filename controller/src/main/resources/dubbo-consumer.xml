@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+        http://www.springframework.org/schema/beans/spring-beans.xsd  
+        http://code.alibabatech.com/schema/dubbo  
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
+	<dubbo:application name="edu-web-boss" >
+		<dubbo:parameter key="qos.enable" value="true"/>
+		<dubbo:parameter key="qos.accept.foreign.ip" value="false"/>
+		<dubbo:parameter key="qos.port" value="33333"/>
+	</dubbo:application>
+
+	<!-- 使用zookeeper注册中心暴露服务地址 -->
+	<!-- 注册中心地址 -->
+	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
+
+	<!-- 宠物服务调用接口 -->
+	<dubbo:reference interface="com.king.dubbo.service.animal.AnimalService" id="animalService" check="false" />
+
+
+	<!--&lt;!&ndash; 用户服务调用接口 &ndash;&gt;-->
+	<!--<dubbo:reference interface="com.king.dubbo.service.user.PmsUserFacade" id="pmsUserFacade" check="false" />-->
+
+
+	<!-- 宠物习惯接口 -->
+	<dubbo:reference interface="com.king.dubbo.service.animal.AnimalHabitService" id="animalHabitService" check="false"/>
+
+	<!-- 宠物诊治接口 -->
+	<dubbo:reference interface="com.king.dubbo.service.animal.AnimalSeeRecordService" id="animalSeeRecordService" check="false"/>
+
+	<dubbo:reference interface="com.king.dubbo.service.animal.AdoptConditionService" id="adoptConditionService" check="false"/>
+
+
+	<!--微信常量参数接口-->
+	<dubbo:reference interface="com.king.dubbo.service.weixin.IParamConstantService" id="paramConstantService"/>
+
+	<!--微信主要服务类-->
+	<dubbo:reference interface="com.king.dubbo.service.weixin.IWxMainService" id="wxMainService"/>
+
+	<!--微信菜单服务类-->
+	<dubbo:reference interface="com.king.dubbo.service.weixin.IWxMenuService" id="wxMenuService"/>
+
+	<!--微信文章服务类-->
+	<dubbo:reference interface="com.king.dubbo.service.weixin.IWxNewArticleInfoService" id="wxNewArticleInfoService"/>
+
+	<!--微信用户服务类-->
+	<dubbo:reference interface="com.king.dubbo.service.weixin.IWxUserService" id="wxUserService"/>
+
+	<!--用户服务类-->
+	<dubbo:reference interface="com.king.dubbo.service.user.UserService" id="userService"/>
+</beans>  

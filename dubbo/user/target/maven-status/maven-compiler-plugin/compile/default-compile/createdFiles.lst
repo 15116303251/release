@@ -1,0 +1,3 @@
+com\king\dubbo\entities\model\user\UserInfo.class
+com\king\dubbo\user\service\UserServiceImpl.class
+com\king\dubbo\user\dao\UserInfoMapper.class

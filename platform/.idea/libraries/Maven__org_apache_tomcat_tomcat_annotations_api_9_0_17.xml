@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.tomcat:tomcat-annotations-api:9.0.17">
+    <CLASSES>
+      <root url="jar://F:/install/apache-maven-3.5.4/maven_repository/org/apache/tomcat/tomcat-annotations-api/9.0.17/tomcat-annotations-api-9.0.17.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://F:/install/apache-maven-3.5.4/maven_repository/org/apache/tomcat/tomcat-annotations-api/9.0.17/tomcat-annotations-api-9.0.17-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://F:/install/apache-maven-3.5.4/maven_repository/org/apache/tomcat/tomcat-annotations-api/9.0.17/tomcat-annotations-api-9.0.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

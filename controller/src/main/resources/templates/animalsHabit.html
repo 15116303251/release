@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>宠物基本信息</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="row-fluid">
+                <div class="span12">
+                    <ul class="nav nav-tabs" style="font-family: '楷体';padding: 50px;font-size: 50px;">
+                        <li class="active" >
+                            <a href="主家">主家</a>
+                        </li>
+                        <li >
+                            <a th:href='@{/toAnimals(id=${animalId})}'>宠物</a>
+
+                        </li>
+                        <li class="disabled">
+                            <a th:href='@{/toAnimalsHabit(id=${animalId})}'>习惯</a>
+                        </li>
+                        <li class="disabled">
+                            <a  th:href='@{/toAnimalsSeeRecord(id=${animalId})}'>救诊信息</a>
+                        </li>
+                    </ul>
+
+                    <ol style="padding: 10px">
+                        <li style="margin-top: 20px">
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                            <table class="table table-bordered" style="font-size: 40px;text-align: center;font-family: '仿宋';">
+                                                <caption style="text-align: center;background-color: beige;font-size: 50px;">宠物习惯信息</caption>
+                                                <thead>
+                                                <tr >
+                                                    <th style="font-size: 45px;text-align: center">属性</th>
+                                                    <th style="font-size: 45px;text-align: center">属性值</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                <tr>
+                                                    <td>吃相</td>
+                                                    <td th:text="${animalHabitDto.eat}">Tanmay</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>睡相</td>
+                                                    <td th:text="${animalHabitDto.sleep}">Tanmay</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>玩相</td>
+                                                    <td th:text="${animalHabitDto.plays}">Tanmay</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>情感交流</td>
+                                                    <td th:text="${animalHabitDto.emotion}">Tanmay</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>散步时刻</td>
+                                                    <td th:text="${animalHabitDto.dogWalking}">Tanmay</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>散步时刻</td>
+                                                    <td th:text="${animalHabitDto.dogWalking}">Tanmay</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>如厕情形</td>
+                                                    <td th:text="${animalHabitDto.wcHabits}">Tanmay</td>
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
