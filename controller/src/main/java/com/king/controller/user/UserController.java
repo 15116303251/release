@@ -26,6 +26,7 @@ public class UserController {
         //1、查询数据库跟用户输入的姓名与账号进行对比
         //UserInfo userInfo=userService.getUserByUserName(username);
 
+
         if(username!=null && password!=null){
             //2、如果是ok，就设置cookie 的值
             Cookie cookie=new Cookie("ssocookie","sso");
